@@ -11,55 +11,58 @@
     justify-content: space-between;
     align-items: center;
     background-position: center bottom;
-}
-
-.subscribe__info {
-    width: 360px;
-    text-align: center;
-}
-
-.subscribe__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
-    margin-top: 30px;
-}
-
-.subscribe__form {
-    display: flex;
-    margin-top: 30px;
-}
-
-.subscribe__content-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
-}
-
-.subscribe__input {
-    background: #E1E1E1;
-    width: 256px;
-    height: 49px;
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    color: #222224;
-    opacity: 0.67;
-    border: none;
-    padding-left: 22px;
-    padding-right: 22px;
-    box-sizing: border-box;
+    &__info {
+        width: 360px;
+        text-align: center;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $colorContent;
+        margin-top: 30px;
+    }
+    &__form {
+        display: flex;
+        margin-top: 30px;
+    }
+    &__content-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167.2%;
+        text-align: center;
+        color: $colorContent;
+    }
+    &__input {
+        background: #E1E1E1;
+        width: 256px;
+        height: 49px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: $colorContent;
+        opacity: 0.67;
+        border: none;
+        padding-left: 22px;
+        padding-right: 22px;
+        box-sizing: border-box;
+    }
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: $colorContent;
+    }
 }
 
 .subscribe__button {
@@ -67,7 +70,7 @@
     height: 49px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
-    background: #F16D7F;
+    background: $selectColor;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -75,66 +78,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: $backgroundColor;
     border: none;
-}
-
-.subscribe__button:hover {
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.subscribe__button:active {
-    transform: scale(0.95);
-}
-
-.subscribe__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 .footer {
-    background-color: #222222;
+    background-color: $colorContent;
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
 }
 
 .icons {
     display: flex;
     gap: 8px;
-}
-
-.icons__link {
-    width: 32px;
-    height: 32px;
-    display: block;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons__link:hover {
-    background-color: #F16D7F;
-    transition: all 0.3s;
-}
-
-.icons__link:hover path {
-    fill: #fff;
+    &__link {
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-color: $backgroundColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link:hover {
+        background-color: $selectColor;
+        transition: all 0.3s;
+    }
+    &__link:hover path {
+        fill: $backgroundColor;
+    }
 }
