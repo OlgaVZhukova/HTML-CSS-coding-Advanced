@@ -1,19 +1,16 @@
 .header {
     min-height: 75px;
     background: $colorContent;
-    display: flex;
+    @include flex_center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     &__left {
-        display: flex;
-        align-items: center;
+        @include flex_center;
         gap: 41px;
     }
     &__right {
-        display: flex;
-        align-items: center;
+        @include flex_center;
         gap: 33px;
     }
 }

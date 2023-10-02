@@ -1,8 +1,7 @@
 .head {
     min-height: 148px;
     background: #F8F3F4;
-    display: flex;
-    align-items: center;
+    @include flex_center;
     justify-content: space-between;
     &__heading {
         font-style: normal;
@@ -45,17 +44,15 @@
     height: 777px;
     background: #F7F7F7;
     border: 1px solid #F7F7F7;
-    display: flex;
+    @include flex_center;
     justify-content: center;
-    align-items: center;
     &_img {
         margin-bottom: 65px;
     }
     &__arrow {
         background: rgba(42, 42, 42, 0.15);
-        display: flex;
+        @include flex_center;
         justify-content: center;
-        align-items: center;
         width: 47px;
         height: 47px;
         position: absolute;
@@ -83,9 +80,8 @@
     padding-bottom: 64px;
     text-align: center;
     background-color: $backgroundColor;
-    display: flex;
+    @include flex_center;
     flex-direction: column;
-    align-items: center;
     &__heading {
         color: $selectColor;
         font-size: 14px;
@@ -167,9 +163,8 @@
         gap: 11px;
     }
     &__summary {
-        display: flex;
+        @include flex_center;
         gap: 11px;
-        align-items: center;
     }
 }
 
@@ -225,8 +220,7 @@
         position: relative;
     }
     &__summary {
-        display: flex;
-        align-items: center;
+        @include flex_center;
         gap: 10px;
     }
     &__content {
@@ -243,16 +237,14 @@
         z-index: 1;
     }
     &__label {
-        display: flex;
+        @include flex_center;
         gap: 9px;
-        align-items: center;
     }
 }
 
 .button {
     width: 212px;
     height: 48px;
-    display: flex;
     border: 1px solid $selectColor;
     font-style: normal;
     font-weight: 400;
@@ -263,8 +255,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    @include flex_center;
     justify-content: center;
-    align-items: center;
     gap: 22px;
     transition: all 1s;
     &:hover {

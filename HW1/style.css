@@ -27,10 +27,10 @@ summary {
   min-height: 75px;
   background: #222222;
   display: flex;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .header__left {
   display: flex;
@@ -171,9 +171,9 @@ summary {
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .sale__item_big {
   min-height: 180px;
@@ -301,8 +301,8 @@ summary {
   margin-top: 48px;
   margin-bottom: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .products__button button {
   width: 211px;
@@ -340,8 +340,8 @@ summary {
 .advantages__item {
   width: 360px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 24px;
 }
 .advantages__heading {
@@ -408,8 +408,8 @@ summary {
   background: #F7F7F7;
   border: 1px solid #F7F7F7;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .slider_img {
   margin-bottom: 65px;
@@ -417,8 +417,8 @@ summary {
 .slider__arrow {
   background: rgba(42, 42, 42, 0.15);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 47px;
   height: 47px;
   position: absolute;
@@ -441,8 +441,8 @@ summary {
   text-align: center;
   background-color: #FFFFFF;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .content__heading {
   color: #F16D7F;
@@ -526,8 +526,8 @@ summary {
 }
 .filter__summary {
   display: flex;
-  gap: 11px;
   align-items: center;
+  gap: 11px;
 }
 
 .filter-box {
@@ -602,14 +602,13 @@ summary {
 }
 .sort__label {
   display: flex;
-  gap: 9px;
   align-items: center;
+  gap: 9px;
 }
 
 .button {
   width: 212px;
   height: 48px;
-  display: flex;
   border: 1px solid #F16D7F;
   font-style: normal;
   font-weight: 400;
@@ -620,8 +619,9 @@ summary {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 22px;
   transition: all 1s;
 }
@@ -647,9 +647,9 @@ summary {
   box-sizing: border-box;
   background-size: cover;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   background-position: center bottom;
 }
 .subscribe__info {
@@ -734,9 +734,9 @@ summary {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 .footer__text {
   font-style: normal;
@@ -756,8 +756,8 @@ summary {
   display: block;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .icons__link:hover {
   background-color: #F16D7F;

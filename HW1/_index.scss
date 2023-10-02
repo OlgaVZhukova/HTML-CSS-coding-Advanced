@@ -129,10 +129,9 @@
         height: 100%;
         top: 0;
         left: 0;
-        display: flex;
+        @include flex_center;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
     &__item_big {
         min-height: 180px;
@@ -260,9 +259,8 @@
 .products__button {
     margin-top: 48px;
     margin-bottom: 60px;
-    display: flex;
+    @include flex_center;
     flex-direction: column;
-    align-items: center;
     & button {
         width: 211px;
         height: 47px;
@@ -298,9 +296,8 @@
     align-items: flex-end;
     &__item {
         width: 360px;
-        display: flex;
+        @include flex_center;
         flex-direction: column;
-        align-items: center;
         gap: 24px;
     }
     &__heading {
