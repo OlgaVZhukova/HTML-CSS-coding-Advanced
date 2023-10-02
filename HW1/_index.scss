@@ -43,27 +43,18 @@
         display: none;
     }
     &__heading {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 700, 17px);
         color: $textColor;
     }
     &__link {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 400, 17px);
         color: #6F6E6E;
     }
     &__link:hover {
         color: $selectColor;
     }
     &__title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 400, 17px);
         color: $selectColor;
     }
     &__list {
@@ -96,17 +87,11 @@
         margin-top: 48%;
     }
     &__title {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 58px;
+        @include font-style(48px, 900, 58px);
         color: $colorContent;
     }
     &__heading {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
+        @include font-style(32px, 700, 38px);
         color: $colorContent;
     }
     &__content {
@@ -124,12 +109,12 @@
         position: relative;
     }
     &__content {
+        @include flex_center;
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        @include flex_center;
         flex-direction: column;
         justify-content: center;
     }
@@ -138,18 +123,12 @@
         grid-column: 1 / -1;
     }
     &__text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        @include font-style(16px, 400, 19px);
         text-align: center;
         color: $backgroundColor;
     }
     &__heading {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
+        @include font-style(24px, 700, 29px);
         text-align: center;
         color: $selectColor;
     }
@@ -158,18 +137,12 @@
 .product-box {
     padding-bottom: 96px;
     &__heading {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
+        @include font-style(30px, 400, 36px);
         text-align: center;
         color: $colorContent;
     }
     &__text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 400, 17px);
         text-align: center;
         margin-top: 6px;
         color: #9F9F9F;
@@ -199,16 +172,13 @@
 }
 
 .product__add {
+    @include font-style(14px, 400, 17px);
     position: absolute;
     top: 188px;
     left: 111px;
     border: 1px solid $backgroundColor;
     width: 139px;
     height: 44px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -233,43 +203,31 @@
 }
 
 .product__heading {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
+    @include font-style(13px, 400, 16px);
     color: $textColor;
 }
 
 .product__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font-style(14px, 300, 17px);
     color: #5D5D5D;
 }
 
 .product__price {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    @include font-style(16px, 400, 19px);
     color: $selectColor;
 }
 
 .products__button {
+    @include flex_center;
     margin-top: 48px;
     margin-bottom: 60px;
-    @include flex_center;
     flex-direction: column;
     & button {
+        @include font-style(16px, 400, 19px);
         width: 211px;
         height: 47px;
         border: 1px solid #FF6A6A;
         font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
         color: #FF6A6A;
         background: none;
     }
@@ -295,23 +253,17 @@
     gap: 30px;
     align-items: flex-end;
     &__item {
-        width: 360px;
         @include flex_center;
+        width: 360px;
         flex-direction: column;
         gap: 24px;
     }
     &__heading {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        @include font-style(20px, 400, 24px);
         color: #FBFBFB;
     }
     &__text {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 300, 17px);
         text-align: center;
         color: #FBFBFB;
     }

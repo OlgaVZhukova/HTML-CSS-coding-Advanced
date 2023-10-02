@@ -4,10 +4,7 @@
     @include flex_center;
     justify-content: space-between;
     &__heading {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
+        @include font-style(24px, 400, 29px);
         color: $selectColor;
     }
 }
@@ -22,17 +19,11 @@
         content: '/';
         padding-left: 8px;
         padding-right: 8px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 300, 17px);
         color: #636363;
     }
     &__link {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 300, 17px);
         color: #636363;
     }
     &__link:hover {
@@ -75,19 +66,16 @@
 // ответ очень прост, не используйте вложенность более трех элементов"
 // Так что же все-таки делать с таким количеством селекторов...
 .content {
+    @include flex_center;
     border: 1px solid #EAEAEA;
     padding-top: 64px;
     padding-bottom: 64px;
     text-align: center;
     background-color: $backgroundColor;
-    @include flex_center;
     flex-direction: column;
     &__heading {
+        @include font-style(14px, 300, normal);
         color: $selectColor;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
     }
     &_mt {
         margin-top: -55px;
@@ -99,29 +87,20 @@
         margin: 12px auto;
     }
     &__h2 {
+        @include font-style(18px, 300, normal);
         color: #4D4D4D;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
         margin-bottom: 48px;
     }
     &__text {
+        @include font-style(14px, 300, normal);
         color: #5E5E5E;
         text-align: center;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
         width: 555px;
         margin-bottom: 32px;
     }
     &__price {
+        @include font-style(24px, 300, normal);
         color: #EF5B70;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
     }
     &__hr {
         height: 1px;
@@ -130,13 +109,10 @@
         margin: 65px auto;
     }
     &__sort {
+        @include font-style(14px, 400, normal);
         margin-bottom: 48px;
         color: #6F6E6E;
         font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 }
 
@@ -147,10 +123,7 @@
     position: absolute;
     z-index: 1;
     &__link {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-style(14px, 400, 17px);
         color: #6F6E6E;
     }
     &__link:hover {
@@ -198,10 +171,7 @@
 }
 
 .filter__category-summary {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font-style(14px, 400, 17px);
     color: #6F6E6E;
     padding: 8px 11px 11px;
     border-left: 5px solid $selectColor;
@@ -243,19 +213,15 @@
 }
 
 .button {
+    @include font-style(16px, 400, 19px);
+    @include flex_center;
     width: 212px;
     height: 48px;
     border: 1px solid $selectColor;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: $selectColor;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    @include flex_center;
     justify-content: center;
     gap: 22px;
     transition: all 1s;
