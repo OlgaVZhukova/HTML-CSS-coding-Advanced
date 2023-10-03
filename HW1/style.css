@@ -361,10 +361,10 @@ summary {
 }
 
 .head {
-  min-height: 148px;
-  background: #F8F3F4;
   display: flex;
   align-items: center;
+  min-height: 148px;
+  background: #F8F3F4;
   justify-content: space-between;
 }
 .head__heading {
@@ -383,13 +383,13 @@ summary {
   color: #F16D7F;
 }
 .breadcrumb__box-link:not(:last-child)::after {
-  content: "/";
-  padding-left: 8px;
-  padding-right: 8px;
   font-style: normal;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
   color: #636363;
 }
 .breadcrumb__link {
@@ -404,25 +404,24 @@ summary {
 }
 
 .slider {
+  display: flex;
+  align-items: center;
   height: 777px;
   background: #F7F7F7;
   border: 1px solid #F7F7F7;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .slider_img {
   margin-bottom: 65px;
 }
 .slider__arrow {
-  background: rgba(42, 42, 42, 0.15);
   display: flex;
   align-items: center;
+  background: rgba(42, 42, 42, 0.15);
   justify-content: center;
   width: 47px;
   height: 47px;
   position: absolute;
-  top: 365px;
 }
 .slider__arrow:hover path {
   fill: #F16D7F;
