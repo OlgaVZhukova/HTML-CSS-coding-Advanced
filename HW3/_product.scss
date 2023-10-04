@@ -1,0 +1,166 @@
+.head {
+    @include flex_center;
+    min-height: 148px;
+    background: #F8F3F4;
+    justify-content: space-between;
+    &__heading {
+        @include font-style(24px, 400, 29px);
+        color: $selectColor;
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    &__box-link:last-child .breadcrumb__link {
+        font-weight: 700;
+        color: $selectColor;
+    }
+    &__box-link:not(:last-child)::after {
+        @include font-style(14px, 300, 17px);
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        color: #636363;
+    }
+    &__link {
+        @include font-style(14px, 300, 17px);
+        color: #636363;
+    }
+    &__link:hover {
+        color: $selectColor;
+    }
+}
+
+.slider {
+    @include flex_center;
+    height: 777px;
+    background: #F7F7F7;
+    border: 1px solid #F7F7F7;
+    justify-content: center;
+    &_img {
+        margin-bottom: 65px;
+    }
+    &__arrow {
+        @include flex_center;
+        background: rgba(42, 42, 42, 0.15);
+        justify-content: center;
+        width: 47px;
+        height: 47px;
+        position: absolute;
+    }
+    &__arrow:hover path {
+        fill: $selectColor;
+    }
+    &__arrow_left {
+        left: 0;
+    }
+    &__arrow_right {
+        right: 0;
+    }
+}
+
+.content {
+    @include flex_center;
+    border: 1px solid #EAEAEA;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    background-color: $backgroundColor;
+    flex-direction: column;
+    margin: -64px auto 0;
+    &__heading {
+        @include font-style(14px, 300, normal);
+        color: $selectColor;
+    }
+    &__line {
+        height: 3px;
+        background-color: $selectColor;
+        width: 63px;
+        margin: 12px auto;
+    }
+    &__h2 {
+        @include font-style(18px, 300, normal);
+        color: #4D4D4D;
+        margin-bottom: 48px;
+    }
+    &__text {
+        @include font-style(14px, 300, normal);
+        color: #5E5E5E;
+        text-align: center;
+        width: 555px;
+        margin-bottom: 32px;
+    }
+    &__price {
+        @include font-style(24px, 300, normal);
+        color: #EF5B70;
+    }
+    &__hr {
+        height: 1px;
+        background-color: #EAEAEA;
+        width: 641px;
+        margin: 65px auto;
+    }
+    &__sort {
+        @include font-style(14px, 400, normal);
+        margin-bottom: 48px;
+        color: #6F6E6E;
+        font-family: Lato;
+    }
+}
+
+.sort {
+    display: flex;
+    gap: 28px;
+    padding-top: 12px;
+    &__details {
+        position: relative;
+    }
+    &__summary {
+        @include flex_center;
+        gap: 10px;
+    }
+    &__content {
+        position: absolute;
+        background: $backgroundColor;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        width: 79px;
+        box-sizing: border-box;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 5px;
+        z-index: 1;
+    }
+    &__label {
+        @include flex_center;
+        gap: 9px;
+    }
+}
+
+.button {
+    @include font-style(16px, 400, 19px);
+    @include flex_center;
+    width: 212px;
+    height: 48px;
+    border: 1px solid $selectColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $selectColor;
+    justify-content: center;
+    gap: 22px;
+    transition: all 1s;
+    &:hover {
+        color: $backgroundColor;
+        background: $selectColor;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &:hover path {
+        fill: white;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
