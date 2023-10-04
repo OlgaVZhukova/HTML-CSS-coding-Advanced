@@ -725,7 +725,6 @@ summary {
   margin-top: -49px;
   margin-bottom: 97px;
 }
-
 .pagination__box {
   border: 1px solid #EBEBEB;
   width: 283px;
@@ -735,7 +734,6 @@ summary {
   align-items: center;
   justify-content: space-around;
 }
-
 .pagination__box a {
   color: #C4C4C4;
   font-size: 16px;
@@ -745,7 +743,6 @@ summary {
   float: left;
   text-decoration: none;
 }
-
 .pagination__box a:active {
   color: #EF5B70;
 }
