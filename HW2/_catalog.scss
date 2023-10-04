@@ -136,20 +136,15 @@
     margin-top: -49px;
     margin-bottom: 97px;
     &__box {
+        @include flex_center;
         border: 1px solid #EBEBEB;
         width: 283px;
         height: 43px;
-        display: inline-block;
-        display: flex;
-        align-items: center;
         justify-content: space-around;
     }
     &__box a {
+        @include font-style(16px, 300, normal);
         color: #C4C4C4;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
         float: left;
         text-decoration: none;
     }
