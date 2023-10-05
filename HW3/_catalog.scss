@@ -72,6 +72,8 @@
 .filter[open] {
     background: $backgroundColor;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding-top: 13px;
+    padding-left: 16px;
 }
 
 .filter[open] .filter__summary {

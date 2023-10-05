@@ -147,12 +147,12 @@
     color: $selectColor;
 }
 
-.product__button {
+.catalog__button {
     display: flex;
     justify-content: center;
 }
 
-.products__button_link {
+.catalog__button_link {
     @include font-style(16px, 400, 19px);
     @include flex_center;
     margin-top: 48px;

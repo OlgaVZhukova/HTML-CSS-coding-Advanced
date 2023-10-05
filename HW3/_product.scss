@@ -138,7 +138,7 @@
     }
 }
 
-.button {
+.product__button {
     @include font-style(16px, 400, 19px);
     @include flex_center;
     width: 212px;

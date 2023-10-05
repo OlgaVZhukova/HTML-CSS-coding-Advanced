@@ -297,12 +297,12 @@ summary {
   color: #F16D7F;
 }
 
-.product__button {
+.catalog__button {
   display: flex;
   justify-content: center;
 }
 
-.products__button_link {
+.catalog__button_link {
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -317,13 +317,13 @@ summary {
   font-family: "Lato";
   color: #FF6A6A;
 }
-.products__button_link:hover {
+.catalog__button_link:hover {
   color: #FFFFFF;
   background: #F16D7F;
   cursor: pointer;
   transition: all 0.3s;
 }
-.products__button_link:active {
+.catalog__button_link:active {
   transform: scale(0.95);
 }
 
@@ -531,7 +531,7 @@ summary {
   gap: 9px;
 }
 
-.button {
+.product__button {
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -549,16 +549,16 @@ summary {
   gap: 22px;
   transition: all 1s;
 }
-.button:hover {
+.product__button:hover {
   color: #FFFFFF;
   background: #F16D7F;
   cursor: pointer;
   transition: all 0.3s;
 }
-.button:hover path {
+.product__button:hover path {
   fill: white;
 }
-.button:active {
+.product__button:active {
   transform: scale(0.95);
 }
 
@@ -653,6 +653,8 @@ summary {
 .filter[open] {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding-top: 13px;
+  padding-left: 16px;
 }
 
 .filter[open] .filter__summary {
