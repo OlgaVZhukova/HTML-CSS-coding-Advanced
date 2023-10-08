@@ -625,6 +625,7 @@ summary {
 }
 .filter__link:hover {
   color: #F16D7F;
+  cursor: pointer;
 }
 .filter__box {
   display: flex;
