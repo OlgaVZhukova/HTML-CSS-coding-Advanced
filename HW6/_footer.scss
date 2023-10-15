@@ -1,0 +1,106 @@
+.subscribe {
+    @include flex_center;
+    min-height: 448px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-image: url(img/subscribe.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-position: center bottom;
+    &__info {
+        width: 360px;
+        text-align: center;
+    }
+    &__text {
+        @include font-style(20px, 400, 24px);
+        text-align: center;
+        color: $colorContent;
+        margin-top: 30px;
+    }
+    &__form {
+        display: flex;
+        margin-top: 30px;
+    }
+    &__content-text {
+        @include font-style(18px, 400, 167.2%);
+        text-align: center;
+        color: $colorContent;
+    }
+    &__input {
+        @include font-style(14px, 400, 17px);
+        @include flex_center;
+        background: #E1E1E1;
+        width: 256px;
+        height: 49px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        color: $colorContent;
+        opacity: 0.67;
+        border: none;
+        padding-left: 22px;
+        padding-right: 22px;
+        box-sizing: border-box;
+    }
+    &__heading {
+        @include font-style(24px, 700, 167.2%);
+        text-align: center;
+        color: $colorContent;
+    }
+}
+
+.subscribe__button {
+    @include font-style(14px, 400, 17px);
+    @include flex_center;
+    width: 100px;
+    height: 49px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background: $selectColor;
+    justify-content: center;
+    color: $backgroundColor;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.footer__bottom {
+    @include flex_center;
+    background-color: $colorContent;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    &__text {
+        @include font-style(16px, 400, 19px);
+        color: #FBFBFB;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    &__link {
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-color: $backgroundColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link:hover {
+        background-color: $selectColor;
+        transition: all 0.3s;
+    }
+    &__link:hover path {
+        fill: $backgroundColor;
+    }
+}

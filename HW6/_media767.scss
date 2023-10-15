@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 212px);
+        padding-right: calc(50% - 212px);
+    }
+    .mobile-menu {
+        width: 100%;
+        top: 0;
+        height: 100vh;
+    }
+}

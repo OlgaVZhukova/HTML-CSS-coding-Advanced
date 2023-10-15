@@ -1,0 +1,82 @@
+.reg {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    gap: 128px;
+    &__info {
+        flex-basis: 652px;
+    }
+    &__info-text {
+        @include font-style(24px, 300, normal);
+        color: $textColor;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    &__li {
+        @include flex_center;
+        gap: 24px;
+    }
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__form {
+        flex-basis: 360px;
+    }
+    &__radio {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    &__heading {
+        @include font-style(16px, 300, normal);
+        color: $colorContent;
+    }
+    &__input {
+        @include font-style(13px, 300, normal);
+        width: 100%;
+        height: 45px;
+        color: $colorContent;
+        border: 1px solid $fieldBorderColor;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 18px;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+    &__text {
+        @include font-style(13px, 300, normal);
+        color: #B1B1B1;
+        margin-top: 16px;
+        margin-bottom: 39px;
+    }
+    &__radio {
+        @include flex_center;
+        gap: 20px;
+    }
+    &__radio-label {
+        @include font-style(11px, 300, normal);
+        @include flex_center;
+        gap: 10px;
+        color: $textColor;
+    }
+}
+
+.button_join {
+    @include font-style(14px, 400, normal);
+    @include flex_center;
+    width: 167px;
+    height: 50px;
+    background: $selectColor;
+    justify-content: center;
+    gap: 20px;
+    color: $backgroundColor;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
