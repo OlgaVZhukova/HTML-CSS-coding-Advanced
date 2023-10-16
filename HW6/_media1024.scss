@@ -1,108 +1,109 @@
-    @media (max-width: 1024px) {
-        .center {
-            padding-left: calc(50% - 384px);
-            padding-right: calc(50% - 384px);
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+    .header__left {
+        padding-left: 32px;
+    }
+    .header__right {
+        padding-right: 41px;
+    }
+    .promo {
+        &__title {
+            font-size: 37px;
+            line-height: 44px;
         }
-        .header__left {
-            padding-left: 32px;
-        }
-        .header__right {
-            padding-right: 41px;
-        }
-        .promo {
-            &__title {
-                font-size: 37px;
-                line-height: 44px;
-            }
-            &__heading {
-                font-size: 24px;
-                line-height: 28px;
-            }
-        }
-        .sale {
-            gap: 19px;
-            margin-right: 16px;
-            margin-left: 16px;
-            &__item {
-                min-width: 232px;
-                min-height: 167px;
-            }
-            &__item_big {
-                min-width: 736px;
-                min-height: 116px;
-            }
-        }
-        .product-box {
-            gap: 16px;
-            display: grid;
-            & .product:last-child {
-                display: none;
-            }
-        }
-        .advantages {
-            @include flex_center;
-            gap: 48px;
-            padding-top: 48px;
-            padding-bottom: 64px;
-            flex-direction: column;
-        }
-        .subscribe {
-            flex-direction: column;
-            gap: 48px;
-            &__info {
-                margin-top: 64px;
-            }
-            &__content {
-                margin-bottom: 140px;
-            }
-        }
-        .footer__bottom {
-            padding: 30px 32px;
-        }
-        .head {
-            gap: 333px;
-            display: flex;
-            justify-content: center;
-        }
-        .breadcrumbs {
-            justify-content: center;
-        }
-        .cart {
-            &__content {
-                min-width: 734px;
-                padding-right: 18px;
-                padding-left: 16px;
-            }
-            &__buttons {
-                justify-content: center;
-                gap: 48px;
-                margin-top: 62px;
-                margin-bottom: 64px;
-            }
-            &__right {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-            }
-            &__form {
-                width: 360px;
-            }
-            &__total {
-                width: 360px;
-                box-sizing: border-box;
-                margin-top: 39px;
-            }
-        }
-        .reg {
-            gap: 16px;
-            &__form {
-                padding-left: 16px;
-            }
-            &__info {
-                flex-basis: 360px;
-            }
-            &__info-text {
-                font-size: 16px;
-            }
+        &__heading {
+            font-size: 24px;
+            line-height: 28px;
         }
     }
+    .sale {
+        gap: 19px;
+        margin-right: 16px;
+        margin-left: 16px;
+        &__top {
+            gap: 20px;
+        }
+        &__item {
+            height: 167px;
+        }
+        &__bottom {
+            height: 116px;
+        }
+    }
+    .product-box {
+        gap: 16px;
+        display: grid;
+        & .product:last-child {
+            display: none;
+        }
+    }
+    .advantages {
+        @include flex_center;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        flex-direction: column;
+    }
+    .subscribe {
+        flex-direction: column;
+        gap: 48px;
+        &__info {
+            margin-top: 64px;
+        }
+        &__content {
+            margin-bottom: 140px;
+        }
+    }
+    .footer__bottom {
+        padding: 30px 32px;
+    }
+    .head {
+        gap: 333px;
+        display: flex;
+        justify-content: center;
+    }
+    .breadcrumbs {
+        justify-content: center;
+    }
+    .cart {
+        &__content {
+            min-width: 734px;
+            padding-right: 18px;
+            padding-left: 16px;
+        }
+        &__buttons {
+            justify-content: center;
+            gap: 48px;
+            margin-top: 62px;
+            margin-bottom: 64px;
+        }
+        &__right {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__form {
+            width: 360px;
+        }
+        &__total {
+            width: 360px;
+            box-sizing: border-box;
+            margin-top: 39px;
+        }
+    }
+    .reg {
+        gap: 16px;
+        &__form {
+            padding-left: 16px;
+        }
+        &__info {
+            flex-basis: 360px;
+        }
+        &__info-text {
+            font-size: 16px;
+        }
+    }
+}

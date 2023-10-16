@@ -23,6 +23,9 @@
     &__heading {
         @include font-style(32px, 700, 38px);
         color: $colorContent;
+        &_select {
+            color: $selectColor;
+        }
     }
     &__content {
         padding-left: 64px;
@@ -30,35 +33,55 @@
 }
 
 .sale {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
     padding-top: 64px;
     padding-bottom: 96px;
     &__item {
-        position: relative;
-    }
-    &__content {
-        @include flex_center;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+        height: 260px;
+        flex-grow: 1;
+        background-position: center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        background-size: cover;
     }
-    &__item_big {
-        min-height: 180px;
-        grid-column: 1 / -1;
+    &__item_1 {
+        background-image: url(./img/si1.jpg);
+    }
+    &__item_2 {
+        background-image: url(./img/si2.jpg);
+    }
+    &__item_3 {
+        background-image: url(./img/si3.jpg);
+    }
+    &__top {
+        display: flex;
+        gap: 30px;
+    }
+    &__bottom {
+        background-image: url(./img/sibig.jpg);
+        height: 180px;
+        background-position: center;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
     }
     &__text {
-        @include font-style(16px, 400, 19px);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
         text-align: center;
-        color: $backgroundColor;
+        color: #FFFFFF;
     }
     &__heading {
-        @include font-style(24px, 700, 29px);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
         text-align: center;
         color: $selectColor;
     }

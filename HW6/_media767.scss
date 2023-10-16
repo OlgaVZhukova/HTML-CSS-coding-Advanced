@@ -3,9 +3,184 @@
         padding-left: calc(50% - 212px);
         padding-right: calc(50% - 212px);
     }
+    .header__link-site_icons {
+        display: none;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+    .header__icons_mob {
+        display: block;
+        fill: #6F6E6E;
+        &:hover svg path {
+            fill: $selectColor;
+        }
+    }
     .mobile-menu {
         width: 100%;
-        top: 0;
         height: 100vh;
+        right: -1000px;
+        transition: right 1s;
+        &__links-menu {
+            display: flex;
+            justify-content: center;
+            & path {
+                fill: black;
+            }
+            & .header__icons:not(:last-child) {
+                margin-right: 48px;
+            }
+        }
+    }
+    .promo {
+        height: 363px;
+        display: flex;
+        justify-content: center;
+        &__img {
+            display: none;
+        }
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        &__info {
+            padding-right: 56px;
+            border-left: 12px solid $selectColor;
+        }
+        &__title {
+            @include font-style(38px, 900, normal);
+        }
+        &__heading {
+            @include font-style(20px, 700, normal);
+        }
+    }
+    .sale {
+        padding-bottom: 64px;
+        &__top {
+            flex-direction: column;
+            row-gap: 32px;
+        }
+        &__item {
+            height: 247px;
+        }
+        &__bottom {
+            height: 111px;
+            margin-top: 32px;
+        }
+    }
+    .product-box__text {
+        text-align: center;
+    }
+    .subscribe {
+        &__info {
+            width: 360px;
+            text-align: center;
+        }
+    }
+    .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-content: center;
+    }
+    .content__text {
+        width: 326px;
+    }
+    .content__hr {
+        width: 175px;
+        margin-top: 32px;
+        margin-bottom: 49px;
+    }
+    .sort__summary {
+        @include font-style(10px, 400, normal);
+    }
+    .filter__summary {
+        font-size: 0;
+    }
+    .filter__img {
+        width: 38px;
+        height: auto;
+    }
+    .sort {
+        padding-right: 20px;
+    }
+    .cart-item {
+        margin-bottom: 32px;
+        box-shadow: (8px 8px 21px rgba(0, 0, 0, 0.13));
+        width: 50%;
+        &__img {
+            width: 144px;
+            height: 188px;
+        }
+        &__name {
+            font-size: 16px;
+            width: 144px;
+            margin-bottom: 24px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__content {
+            padding: 13px 16px;
+        }
+        &__input {
+            width: 24px;
+            height: 15px;
+            font-size: 10px;
+        }
+        &__close {
+            top: 16px;
+            right: 12px;
+            & svg {
+                width: 10px !important;
+                height: 11px !important;
+            }
+        }
+    }
+    .cart {
+        &__buttons {
+            gap: 9px;
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__right {
+            flex-direction: column;
+            padding-right: 6px;
+            padding-left: 9px;
+        }
+        &__content {
+            max-width: 100%;
+        }
+    }
+    .button_reg {
+        @include font-style(12px, 400, normal);
+        width: 175px;
+        height: 33px;
+    }
+    .reg {
+        flex-direction: column;
+        &__form {
+            padding-right: 8px;
+            padding-left: 9px;
+        }
+        &__info {
+            padding-right: 8px;
+            padding-left: 9px;
+        }
+    }
+    .footer {
+        &__bottom {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 43px;
+            padding-bottom: 9px;
+            gap: 40px;
+        }
     }
 }
